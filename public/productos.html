@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Panel de prueba</title>
+
+        <!--css-->
+        <link rel="stylesheet" href="css/panel.css">
+
+        <!--scripts-->
+        <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/productos.js"></script>
+    </head>
+    <body>
+        
+        <div id="Contenedor_tabla">
+            <div id="titulo">
+                <h1>Panel de control</h1>
+            </div>
+            <div id="tabla">
+                <div id="Factores">
+                    <button id="agregar">agregar</button>
+                    <button id="buscar">buscar</button>
+                </div>
+                <!-- Aquí se agregarán las filas de datos -->
+                <div id="tablaAgregable">
+
+                    <div>
+                        <form action="http://localhost:3000/procesar" method="post" class="formularioProducto" onsubmit="return false;" enctype="multipart/form-data">
+                            <div class="seleccionProducto">
+                                <button type="button" class="div_Producto">Producto</button>
+                                <div class="info" style="display: none;">
+                                    <button type="button" class="boton nombre">Nombre</button>
+                                    <button type="button" class="boton descripcion">Descripcion</button>
+                                    <button type="button" class="boton imagen">imagen</button>
+                                    <button type="button" class="boton precio">Precio</button>
+                                    <button type="button" class="boton borrar">borrar</button>
+                                    
+                                    <button type="submit" class="boton guardar">Guardar</button>
+                                </div>
+                            </div>
+                            <!--Contenedor de los formularios-->
+                            <div class="contenedor_respuesta">
+                                <div class="form opciones formNombre">
+                                    <label for="Nombre">Nombre</label><br>
+                                    <input type="text" name="Nombre" class="opcion nombre"><br>
+                
+                                    <button type="button" class="cancelarOpcion">Cancelar</button>
+                                    <button type="button" class="aceptarOpcion">Aceptar</button><br>
+                                </div>                
+                                <div class="form opciones formPrecio">
+                                    <label for="precio">Precio</label><br>
+                                    <input type="number" name="precio" class="opcion precio"><br>
+
+                                    <button type="button" class="cancelarOpcion">Cancelar</button>
+                                    <button type="button" class="aceptarOpcion">Aceptar</button><br>
+                                </div>                                        
+                                <div class="form opciones formDescripcion">
+                                    <label for="Descripcion">Descripcion</label><br>
+                                    <input type="text" name="Descripcion" class="opcion Descripcion"><br>
+                
+                                    <button type="button" class="cancelarOpcion">Cancelar</button>
+                                    <button type="button" class="aceptarOpcion">Aceptar</button><br>
+                                </div>
+
+                                <div class="form opciones formImagen">
+                                    <label for="Imagen">Imagen</label><br>
+                                    <input type="file" name="Imagen" accept="image/*" class="opcion Imagen" ><br>
+                                    <img src="" alt="imagen del producto" class="lugarImage">
+                                    <button type="button" class="cancelarOpcion">Cancelar</button>
+                                    <button type="button" class="aceptarOpcion">Aceptar</button><br>
+                                </div>
+                                <div class="form formBorrar">
+                                    <form action="">
+                                        <h2>¿Seguro que quieres borrar el producto?</h2>
+                                        <button type="button" class="cancelarOpcion">Cancelar</button>
+                                        <button type="button" class="aceptarOpcion">Borrar</button><br>
+                                    </form>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+                <button id="salir">salir</button>
+            </div>
+        </div><br>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+body{
+    background-image: url('Fondo.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}h1{
+    font-size: 50px;
+    margin-right: 12px;
+    color: rgb(92, 92, 92);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}h2{
+    margin-right: 13px;
+    color: azure;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}p{
+    color: black;
+    margin-right: 10px;
+}th{
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}#Contenedor_tabla{
+    margin-top: 9px;
+    margin-left: 9px;
+    padding-top: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+
+    border-radius: 50px;
+    background-color: rgb(248, 220, 243);
+    border: 4px solid black;
+    width: 400px;
+    height: auto;
+}#Agregar{
+    background-color: rgb(71, 192, 223);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: auto;
+    height: auto;
+}#Contenedor_tabla{
+    background-color: rgb(234, 213, 253);
+    padding: 20px;
+}#salir{
+    border-radius: 30px;
+    border: 5px solid black;
+}.lugarImage{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 2px solid black;
+}#menus{
+    background-color: rgb(101, 101, 218);
+    padding: 20px;
+    border-radius: 30px;
+}.cambiarN{
+    display: none;
+    background-color: beige;
+    border-radius: 30px;
+    padding: 10px;
+}

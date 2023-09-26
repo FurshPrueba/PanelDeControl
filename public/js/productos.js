@@ -113,6 +113,7 @@ $(document).ready(function(){
                 $('#salir').css('display', 'none');//para que se vea boton de salida 
             }
         });
+        
     }); 
 
     //SEleccion de una opcion de cada producto

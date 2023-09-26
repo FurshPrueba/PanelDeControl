@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Panel de prueba</title>
+
+        <!--css-->
+        <link rel="stylesheet" href="css/menu.css">
+
+        <!--scripts-->
+        <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/menu.js"></script>
+    </head>
+    <body>
+        
+        <div id="Contenedor_tabla">
+            <div id="titulo">
+                <h1>Panel de control</h1><br>
+                <h2>Menus</h2>
+            </div>
+
+            <div id="Opciones">
+                <button id="Agregar">Agregar</button>
+            </div>
+            <div id="menus">
+                <div class="menu helado">
+                    <a href="productos.html"><button class="nombreMenu helado">Helado </button></a><button class="editar">Editar</button>
+                    <div class="cambiarN helado">
+                        <form action="" method="post" onsubmit="return false;" class="formNombre">
+                            <label for="nombre">Nombre</label><br>
+                            <input type="text" name="nombre" class="nombre"><br>
+                            <p class="error"></p>
+                            <input type="submit" value="Guardar">
+                        </form>
+                    </div>
+                </div>
+                <div class="menu helado">
+                    <a href="productos.html"><button class="nombreMenu tropifrutas">Tropifrutas</button></a><button class="editar">Editar</button>
+                    <div class="cambiarN helado">
+                        <form action="" method="post" onsubmit="return false;" class="formNombre">
+                            <label for="nombre">Nombre</label><br>
+                            <input type="text" name="nombre" class="nombre"><br>
+                            <p class="error"></p>
+                            <input type="submit" value="Guardar">
+                        </form>
+                    </div>
+                </div>
+                <div class="menu helado">
+                    <a href="productos.html"><button class="nombreMenu bebidas">Bebidas</button></a><button class="editar">Editar</button>
+                    
+                    <div class="cambiarN helado">
+                        <form action="" method="post" onsubmit="return false;" class="formNombre">
+                            <label for="nombre">Nombre</label><br>
+                            <input type="text" name="nombre" class="nombre"><br>
+                            <p class="error"></p>
+                            <input type="submit" value="Guardar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <button id="salir">salir</button>
+        </div><br>
+    </body>
+</html>
