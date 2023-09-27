@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Panel de prueba</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="css/index.css">
+
+    <!--scripts-->
+    <script type="text/javascript" src="js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.13.2.custom/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+
+    <div id="contenido">
+        <h1>Contenido</h1>
+        <p>
+            Los cocos y las piñas son dos frutas tropicales deliciosas y refrescantes que nos transportan 
+            directamente a las playas paradisíacas. Estos frutos exóticos son muy populares en España y se
+             pueden encontrar fácilmente en los supermercados y fruterías.
+            El coco, con su forma redonda y su cáscara dura y marrón, es una fruta muy versátil. Su interior
+             está compuesto por una pulpa blanca y jugosa, conocida como coco rallado, que se utiliza en 
+             infinidad de recetas. Además, el agua de coco que se encuentra en su interior es una bebida muy refrescante y nutritiva, ideal para hidratarse en los días calurosos de verano.
+            El sabor del coco es dulce y ligeramente tropical, lo que lo convierte en un ingrediente perfecto
+             para postres y dulces. El coco rallado se utiliza en la elaboración de tartas, pasteles, 
+             galletas y helados. También se puede añadir a batidos y smoothies para darles un toque exótico.
+            Por otro lado, la piña es una fruta tropical con forma ovalada y una corona de hojas en su parte 
+            superior. Su piel es rugosa y de un color amarillo brillante cuando está madura. La pulpa de 
+            la piña es jugosa y tiene un sabor dulce y ácido a la vez, lo que la convierte en una fruta deliciosa y refrescante.
+            La piña se puede consumir en rodajas, en trozos o en jugo. Es perfecta para disfrutar sola como
+             tentempié o para añadir a ensaladas, salsas, cócteles y platos principales. Además, la piña 
+             es una fruta muy beneficiosa para la
+            </p>
+    </div>
+    <button id="botonAcceder">Acceder</button>
+    <div id="Acceder">
+        <form action="/procesar" onsubmit="return false" id="formAcceder">
+            <label for="dominio">Dominio</label><br>
+            <input type="text" name="dominio"  class="inputs" id="dominio"><br>
+            <label for="contraseña">Contraseña</label><br>
+            <input type="text" name="contraseña" class="inputs" id="contraseña"><br><br>
+            <div id="error">
+
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    <button id="salir">salir</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "panel",
+  "version": "0.0.4",
+  "main": "server.js",
+  "license": "MIT",
+  "description": "Es un panel de control en el cual el usuario agrega caracteristicas a un producto de su preferencia",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Esteban",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pepepruebasDelSubmarino/PanelDeControl.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pepepruebasDelSubmarino/PanelDeControl/issues"
+  },
+  "homepage": "https://github.com/pepepruebasDelSubmarino/PanelDeControl#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "sqlite3": "^5.1.6"
+  }
+}
